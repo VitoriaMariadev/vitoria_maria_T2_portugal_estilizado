@@ -5,6 +5,16 @@
     color: #fff;
 }
 
+.setinha{
+    width: 3%;
+    height: 5%;
+    position: fixed;
+    top: 90%;
+    animation: setinha 0.8s ease-out infinite;
+    z-index: 1;
+    left: 50%;
+}   
+
 .main-porto-fundo-img{
     width: 100%;
     height: 90vh;
@@ -31,6 +41,7 @@
     left: -30%;
     transform: rotate(45deg);
     box-shadow: 20px 20px 8px 0px rgba(0, 0, 0, 0.25);
+    animation: aparecer-triangulo-um 0.8s ease-out;
 
 }
 
@@ -40,7 +51,8 @@
     background-color: #6BB39B;
     position: absolute;
     right: 0;
-    animation: aparecer 0.8s ease-out;
+    animation: aparecer-retangulo 0.8s ease-out;
+    
 }
 
 .main-porto-triangulo-dois{
@@ -52,6 +64,7 @@
     top: -15%;
     right: 5%;
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.25);
+    animation: aparecer-triangulo-dois 0.8s ease-out;
 }
 
 .main-porto-triangulo-tres{
@@ -63,6 +76,7 @@
     bottom: -20%;
     right: 5%;
     box-shadow: 20px 20px 8px 0px rgba(0, 0, 0, 0.25);
+    animation: aparecer-triangulo-dois 0.8s ease-out;
 }
 
 .main-porto-fundo-img > h1{
@@ -70,10 +84,11 @@
     font-size: 4.3rem;
     font-weight: 800;
     cursor: pointer;
+    animation: aparecer-titulo 1s ease-out;
 }
 
 .main-porto-fundo-img > h1:hover{
-    font-size: 4.5rem;
+    opacity: 50%;
 }
 
 .main-porto-sobre{
@@ -81,12 +96,78 @@
     height: 150vh;
 }
 
-@keyframes aparecer {
+@keyframes aparecer-triangulo-um {
     0%{
         left: -100%;
+        opacity: 0;
 
     }
 
+
+    100%{
+        left: -30%;
+        opacity: 100%;
+        
+    }
+}
+
+@keyframes aparecer-triangulo-dois {
+    5%{
+        right: -100%;
+
+    }
+
+
+    100%{
+        right: 5%;
+        
+    }
+}
+
+@keyframes aparecer-retangulo {
+    5%{
+        right: -100%;
+
+    }
+
+
+    100%{
+        right: 0%;
+
+        
+    }
+}
+
+@keyframes aparecer-titulo {
+    5%{
+        opacity: 0;
+
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+
+    }
+}
+
+@keyframes setinha {
+    0%{
+        top: 90%;
+
+    }
+
+    50%{
+        top: 92%;
+
+    }
 
     100%{
         top: 90%;

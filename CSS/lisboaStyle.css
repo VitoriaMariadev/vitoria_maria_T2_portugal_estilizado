@@ -32,6 +32,7 @@
     font-size: 4rem;
     letter-spacing: 10px;
     font-weight: 800;
+    animation: aparecer-titulo 2s ease-out;
 }
 
 .main-lisboa-circulo-um{
@@ -45,6 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: aparecer-circulo-um 0.8s ease-out;
 }
 
 .main-lisboa-circulo-um > img{
@@ -68,6 +70,7 @@
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
+    animation: aparecer-titulo 2s ease-out;
 }
 
 .main-lisboa-texto > p > span{
@@ -337,6 +340,32 @@
 
     100%{
         top: 90%;
+        
+    }
+}
+
+@keyframes aparecer-circulo-um {
+    0%{
+        left: -100%;
+        opacity: 0;
+
+    }
+
+    100%{
+        left: -9%;
+        opacity: 100%;
+        
+    }
+}
+
+@keyframes aparecer-titulo{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 100%;
         
     }
 }

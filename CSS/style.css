@@ -261,6 +261,7 @@ header{
 .main-home-btn > a{
     width: 12%;
     height: 40%;
+    animation: btn 1s ease-out infinite;
 }
 
 .main-home-btn > a>  button{
@@ -470,4 +471,19 @@ header{
 
         opacity: 100%;
     }
+}
+
+@keyframes  btn {
+    0%{
+        margin-bottom: 0;
+    }
+
+    50%{
+        margin-bottom: 1%;
+    }
+
+    100%{
+        margin-bottom: 0;
+    }
+    
 }
