@@ -363,6 +363,8 @@ header{
     align-items: center;
     justify-content: center;
     color: #000;
+    margin-bottom: 5%;
+    margin-top: 2%;
  
 }
 
@@ -441,3 +443,4 @@ header{
     font-size: 0.8rem;
     text-align: center;
 }
+
