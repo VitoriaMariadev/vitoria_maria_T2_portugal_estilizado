@@ -16,6 +16,7 @@
     position: fixed;
     top: 90%;
     animation: setinha 0.8s ease-out infinite;
+    z-index: 1;
 }
 
 .main-lisboa-titulo{
@@ -83,7 +84,7 @@
 
 .main-lisboa-sobre{
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,10 +92,11 @@
 
 .main-lisboa-sobre-titulo{
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -102,6 +104,224 @@
     font-size: 3.6rem;
     letter-spacing: 10px;
     font-weight: 800;
+}
+
+.main-lisboa-sobre-informacoes{
+    width: 100%;
+    height: 85%;
+    position: relative;    
+    
+}
+
+.main-lisboa-sobre-informacoes-circulo-um{
+    width: 45%;
+    height: 65%;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    left: 5%;
+}
+
+.main-lisboa-sobre-informacoes-circulo-um > img{
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+}
+
+.main-lisboa-sobre-informacoes-circulo-dois{
+    width: 40%;
+    height: 60%;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    right: 5%;
+    bottom: 25%;
+}
+
+.main-lisboa-sobre-informacoes-circulo-dois > img{
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+}
+
+.main-lisboa-sobre-informacoes-card{
+    width: 45%;
+    height: 25%;
+    background-color: #6BB39B;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.main-lisboa-sobre-informacoes-card > p{
+    width: 80%;
+    text-align: center;
+}
+
+.main-lisboa-sobre-divisao{
+    width: 60%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 2%;
+}
+
+.main-lisboa-torre{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main-lisboa-torre-titulo{
+    width: 30%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-torre-titulo > h1{
+    font-size: 3.3rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main-lisboa-torre-circulo{
+    width: 50%;
+    height: 73%;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    bottom: 8%;
+    left: -5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-torre-circulo > img{
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+}
+
+.main-lisboa-torre-card{
+    width: 30%;
+    height: 30%;
+    background-color: #6BB39B;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    color: #fff;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-torre-card > p{
+    width: 80%;
+    text-align: center;
+}
+
+.main-lisboa-torre-divisao{
+    width: 60%;
+    height: 2px;
+    background-color: #000;
+}
+
+.main-lisboa-mosteiro{
+    width: 100%;
+    height: 140vh;
+    position: relative;
+}
+
+.main-lisboa-mosteiro-titulo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-mosteiro-titulo> h1{
+    width: 60%;
+    font-size: 3.3rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main-lisboa-mosteiro-circulo-um{
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-mosteiro-circulo-um > img{
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+}
+
+.main-lisboa-mosteiro-circulo-dois{
+    width: 45%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:20%;
+}
+
+.main-lisboa-mosteiro-circulo-dois > img{
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+}
+
+.main-lisboa-mosteiro-card{
+    width: 40%;
+    height: 25%;
+    background-color: #6BB39B;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.main-lisboa-mosteiro-card > p{
+    width: 80%;
+    text-align: center;
 }
 
 @keyframes setinha {
