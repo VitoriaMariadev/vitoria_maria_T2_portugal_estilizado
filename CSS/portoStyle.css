@@ -11,7 +11,7 @@
     position: fixed;
     top: 90%;
     animation: setinha 0.8s ease-out infinite;
-    z-index: 1;
+    z-index: 2;
     left: 50%;
 }   
 
@@ -91,10 +91,130 @@
     opacity: 50%;
 }
 
-.main-porto-sobre{
+.main-porto-vinho{
     width: 100%;
-    height: 150vh;
+    height: 90vh;
+    background-image: url("../Images/vinho\ do\ porto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
 }
+
+.main-porto-vinho-retangulo-um{
+    width: 100%;
+    height: 80%;
+    background-color: #6BB39B;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -50%;
+    top: -3%;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.25);
+    animation: aparecer-retangulo-um 0.8s ease-out;
+
+}
+
+.main-porto-vinho-retangulo-dois{
+    width: 100%;
+    height: 80%;
+    background-color: #6BB39B;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -45%;
+    bottom: -10%;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.25);
+    animation: aparecer-retangulo-dois 0.8s ease-out;
+
+}
+
+.main-porto-titulo{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.main-porto-titulo > h1{
+    letter-spacing: 10px;
+    font-size: 3.8rem;
+    font-weight: 800;
+    cursor: pointer;
+    animation: aparecer-titulo 1s ease-out ;
+    text-align: center;
+}
+
+.main-porto-card{
+    width: 45%;
+    height: 40%;
+    background: rgba(11, 11, 13, 0.80);
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: aparecer-titulo 1s ease-out;
+}
+
+.main-porto-card > p{
+    width: 80%;
+    text-align: center;
+    animation: aparecer-titulo 1s ease-out;
+}
+
+.main-porto-ponte{
+    width: 100%;
+    height: 90vh;
+}
+
+.main-porto-ponte{
+    width: 100%;
+    height: 90vh;
+    background-image: url("../Images/ponte\ dom\ luis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+}
+
+.main-porto-ponte-retangulo-um{
+    width: 120%;
+    height: 60%;
+    position: absolute;
+    background-color: #6BB39B;
+    top: -30%;
+    transform: rotate(10deg);
+    animation: aparecer-retangulo-ponte-um 0.8s ease-out;
+    box-shadow: 15px 15px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main-porto-ponte-retangulo-dois{
+    width: 120%;
+    height: 60%;
+    position: absolute;
+    background-color: #6BB39B;
+    bottom: -44%;
+    transform: rotate(10deg);
+    animation: aparecer-retangulo-ponte-dois 0.8s ease-out;
+    box-shadow: 15px 15px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+
 
 @keyframes aparecer-triangulo-um {
     0%{
@@ -172,5 +292,54 @@
     100%{
         top: 90%;
         
+    }
+}
+
+@keyframes aparecer-retangulo-um {
+    5%{
+        top: -100%;
+
+    }
+
+
+    100%{
+        top: -3;
+
+        
+    }
+}
+
+@keyframes aparecer-retangulo-dois {
+    5%{
+        bottom: -200%;
+    }
+
+
+    100%{
+        bottom: -10%;      
+    }
+}
+
+
+@keyframes aparecer-retangulo-ponte-dois {
+    5%{
+        bottom: -200%;
+    }
+
+
+    100%{
+        bottom: -44%;      
+    }
+}
+
+
+@keyframes aparecer-retangulo-ponte-um {
+    5%{
+        top: -200%;
+    }
+
+
+    100%{
+        top: -30%;   
     }
 }
