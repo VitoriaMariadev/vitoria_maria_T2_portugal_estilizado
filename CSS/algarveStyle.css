@@ -8,6 +8,16 @@
     overflow-x: hidden;
 }
 
+.setinha{
+    width: 3%;
+    height: 5%;
+    position: fixed;
+    top: 90%;
+    animation: setinha 0.8s ease-out infinite;
+    z-index: 2;
+    left: 50%;
+}   
+
 .main-algarve-titulo{
     width: 100%;
     height: 20vh;
@@ -26,18 +36,17 @@
 
 .main-algarve-container{
     width: 100%;
-    height: 140vh;
+    height: 220vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 5%;
+    padding-bottom: 20vh;
+    overflow: hidden;
 }
 
-.main-algarve::-webkit-scrollbar {
-    display: none;
-  }
+
 
 .main-algarve-container-card{
     width: 40%;
@@ -53,13 +62,7 @@
 }
 
 
-.main-algarve-container-card > img{
-    width: 85%;
-    height: 85%;
-    cursor: pointer;
-    z-index: 1;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+
 
 .main-algarve-container-card-sombra{
     position: absolute;
@@ -71,12 +74,23 @@
     justify-content: center;
     color: #fff;
     cursor: pointer;
-    z-index: 2;
+
+}
+
+
+.main-algarve-container-card-sombra > img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: -1;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
 }
 
 .main-algarve-container-card-sombra:hover{
     background-color: #ffffff00;
     color: #0b0b0d00;
+    transition: 0.2 ease-in-out;
 }
 
 .main-algarve-container-card-preto{
@@ -97,7 +111,7 @@
     color: #fff;
     animation: aparecer-card 0.4s ease-out;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    z-index: 4;
+    z-index: 2;
 
 }
 
@@ -119,13 +133,30 @@
 
 @keyframes aparecer-card {
     0%{
-        height: 10vh;
-        opacity: 0;
+        height: 15vh;
+        opacity: 20%;
     }
 
 
     100%{
         height: 85vh;
         opacity: 100%;
+    }
+}
+
+@keyframes setinha {
+    0%{
+        top: 90%;
+
+    }
+
+    50%{
+        top: 92%;
+
+    }
+
+    100%{
+        top: 90%;
+        
     }
 }
