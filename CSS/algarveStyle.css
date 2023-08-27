@@ -1,0 +1,131 @@
+.main-algarve{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main-algarve-titulo{
+    width: 100%;
+    height: 20vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-algarve-titulo > h1{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    animation: aparecer-titulo 2s ease-out;
+}
+
+.main-algarve-container{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+}
+
+.main-algarve::-webkit-scrollbar {
+    display: none;
+  }
+
+.main-algarve-container-card{
+    width: 40%;
+    height: 60vh;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+
+.main-algarve-container-card > img{
+    width: 85%;
+    height: 85%;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-algarve-container-card-sombra{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: #0b0b0d6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main-algarve-container-card-sombra:hover{
+    background-color: #ffffff00;
+    color: #0b0b0d00;
+}
+
+.main-algarve-container-card-preto{
+    display: none;
+    
+}
+
+.main-algarve-container-card-sombra:hover .main-algarve-container-card-preto{
+    width: 110%;
+    height: 85vh;
+    background-color: #0B0B0D;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    padding-top: 3%;
+    color: #fff;
+    animation: aparecer-card 0.4s ease-out;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+
+}
+
+
+.main-algarve-container-card-preto > img{
+    width: 95%;
+    height: 60%;
+}
+
+.main-algarve-container-card-preto > p{
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes aparecer-card {
+    0%{
+        height: 10vh;
+        opacity: 0;
+    }
+
+
+    100%{
+        height: 85vh;
+        opacity: 100%;
+    }
+}
