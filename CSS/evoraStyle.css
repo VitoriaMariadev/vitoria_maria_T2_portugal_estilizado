@@ -1,0 +1,188 @@
+.main-evora{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+
+}
+
+.setinha{
+    width: 3%;
+    height: 5%;
+    position: fixed;
+    top: 90%;
+    animation: setinha 0.8s ease-out infinite;
+    z-index: 1;
+}
+
+.main-evora-titulo{
+    width: 100%;
+    height: 20vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-evora-titulo > h1{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    animation: aparecer-titulo 2s ease-out;
+}
+
+.main-evora-sobre{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-evora-sobre-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-evora-sobre-container-verde{
+    width: 98%;
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #6BB39B;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-evora-sobre-container-preto{
+    width: 98%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-evora-sobre-container-preto > img{
+    width: 45%;
+    height: 90%;
+}
+
+.main-evora-sobre-container-preto-texto{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.main-evora-sobre-container-preto-texto > p{
+    width: 80%;
+    height: 90%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-evora-sobre-divisao{
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+}
+
+.main-lisboa-capela{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-lisboa-capela-titulo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-lisboa-capela-titulo > h1{
+    width: 30%;
+    font-size: 3.6rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    text-align: center;
+    animation: aparecer-titulo 2s ease-out;
+
+}
+
+.main-evora-capela-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-evora-capela-container-verde{
+    width: 98%;
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #6BB39B;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-evora-capela-container-preto{
+    width: 98%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-evora-capela-container-preto > img{
+    width: 45%;
+    height: 90%;
+}
+
+.main-evora-capela-container-preto-texto{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.main-evora-capela-container-preto-texto > p{
+    width: 80%;
+    height: 90%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
