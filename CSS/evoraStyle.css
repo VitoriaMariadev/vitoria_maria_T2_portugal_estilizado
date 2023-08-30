@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
     
 
 }
@@ -37,7 +37,7 @@
 
 .main-evora-sobre{
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -59,6 +59,7 @@
     left: 0;
     background-color: #6BB39B;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: aparecer-retangulo-verde 0.5s ease-out;
 }
 
 .main-evora-sobre-container-preto{
@@ -71,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: aparecer-retangulo-verde 0.5s ease-out;
 }
 
 .main-evora-sobre-container-preto > img{
@@ -90,12 +92,13 @@
 .main-evora-sobre-container-preto-texto > p{
     width: 80%;
     height: 90%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: aparecer-retangulo-verde-texto 0.5s ease-out;
 }
 
 .main-evora-sobre-divisao{
@@ -106,7 +109,7 @@
 
 .main-lisboa-capela{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -122,7 +125,7 @@
 }
 
 .main-lisboa-capela-titulo > h1{
-    width: 30%;
+    width: 50%;
     font-size: 3.6rem;
     letter-spacing: 10px;
     font-weight: 800;
@@ -133,7 +136,7 @@
 
 .main-evora-capela-container{
     width: 80%;
-    height: 90%;
+    height: 68%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +151,7 @@
     left: 0;
     background-color: #6BB39B;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: aparecer-retangulo-verde 0.5s ease-out;
 }
 
 .main-evora-capela-container-preto{
@@ -160,6 +164,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: aparecer-retangulo-verde 0.5s ease-out;
 }
 
 .main-evora-capela-container-preto > img{
@@ -174,15 +179,71 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    animation: aparecer-retangulo-verde-texto 0.5s ease-out;
 }
 
 .main-evora-capela-container-preto-texto > p{
     width: 80%;
     height: 90%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes setinha {
+    0%{
+        top: 90%;
+
+    }
+
+    50%{
+        top: 92%;
+
+    }
+
+    100%{
+        top: 90%;
+        
+    }
+}
+
+@keyframes aparecer-titulo{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 100%;
+        
+    }
+}
+
+@keyframes aparecer-retangulo-verde {
+    0%{
+        width: 0%;
+        height: 0%;
+
+    }
+
+    100%{
+        width: 98%;
+        height: 95%;
+        
+    }
+}
+
+@keyframes aparecer-retangulo-verde-texto{
+    0%{
+        font-size: 0;
+
+    }
+
+    100%{
+        font-size: 1.1rem;
+        
+    }
 }
