@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main-sintra{
     width: 100%;
     height: auto;
@@ -142,4 +143,150 @@
         top: 90%;
         
     }
+=======
+.main-sintra{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.setinha{
+    width: 3%;
+    height: 5%;
+    position: fixed;
+    top: 93%;
+    animation: setinha 0.8s ease-out infinite;
+    z-index: 1;
+}
+
+.main-sintra-titulo{
+    width: 100%;
+    height: 20vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sintra-titulo > h1{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    animation: aparecer-titulo 2s ease-out;
+}
+
+.main-sintra-container-topo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sintra-container-topo-esquerda{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-sintra-container-topo-esquerda-preto{
+    width: 90%;
+    height: 100%;
+    background-color: #000;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-sintra-container-topo-esquerda-preto-texto{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.main-sintra-container-topo-esquerda-preto-texto > h2{
+    height: 15%;
+}
+
+.main-sintra-container-topo-esquerda-preto-texto > p {
+    width: 80%;
+    text-align: center;
+    height: 40%;
+    font-size: 1.2rem;
+}
+
+.main-sintra-container-topo-direita{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.main-sintra-container-topo-direita-container{
+    width: 90%;
+    height: 46%;
+    background-color: #000;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sintra-container-topo-direita-container > img{
+    width: 98%;
+    height: 97%;
+}
+
+.main-sintra-container-baixo{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sintra-container-baixo-container{
+    width: 76%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-sintra-container-baixo-container > img{
+    width: 99%;
+    height: 97%;
+}
+
+@keyframes setinha {
+    0%{
+        top: 90%;
+
+    }
+
+    50%{
+        top: 92%;
+
+    }
+
+    100%{
+        top: 90%;
+        
+    }
+>>>>>>> 68d86b574d59fa13e47112a77a4e2cdf6c6c6551
 }
