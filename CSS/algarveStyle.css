@@ -78,6 +78,7 @@
     justify-content: center;
     color: #fff;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .main-card-preto-informacoes{
@@ -105,6 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .main-card-preto-informacoes > p{

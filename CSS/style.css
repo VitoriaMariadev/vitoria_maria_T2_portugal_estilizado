@@ -146,8 +146,7 @@ header{
 
 .lista > ul > li:hover ul{
     display: flex;
-    
-    
+      
 }
 
 .pesquisa{
